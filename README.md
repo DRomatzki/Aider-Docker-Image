@@ -79,7 +79,7 @@ You can create an alias in bashrc if you like. It solves a lot of typing and pro
 Edit your .bashrc file in you home directory and add the following code
 
 ```bash
-allias aider=docker run --rm -it \
+alias aider=docker run --rm -it \
            --name aider \
            -p 8501:8501 \
            -v "$(pwd)":/home/appuser/app \
