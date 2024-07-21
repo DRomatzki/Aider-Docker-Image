@@ -1,0 +1,12 @@
+openai-api-key: sk-1234567890asdfghj
+model: "ollama/DeepSeekCoderV2"
+model-metadata-file: "/home/appuser/config/aider.model.metadata.json"
+model-settings-file: "/home/appuser/config/aider.model.settings.yml"
+gui: true
+map-tokens: 128000
+max-chat-history-tokens: 10000
+dark-mode: true
+pretty: true
+stream: true
+gitignore: true
+no-git: false

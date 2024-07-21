@@ -1,0 +1,39 @@
+- name: "DeepSeekCoderV2"
+  edit_format: "whole"
+  weak_model_name: "deepseek-coder-v2:16b-lite-instruct-q3_K_M"
+  use_repo_map: false
+  send_undo_reply: false
+  accepts_images: false
+  lazy: false
+  reminder_as_sys_msg: true
+  examples_as_sys_msg: false
+
+- name: "Llama3"
+  edit_format: "whole"
+  weak_model_name: "llama3:8b-instruct-q5_K_M"
+  use_repo_map: true
+  send_undo_reply: true
+  accepts_images: true
+  lazy: true
+  reminder_as_sys_msg: true
+  examples_as_sys_msg: false
+
+- name: "Qwen2"
+  edit_format: "whole"
+  weak_model_name: "qwen2:7b-instruct-q5_K_M"
+  use_repo_map: true
+  send_undo_reply: true
+  accepts_images: true
+  lazy: true
+  reminder_as_sys_msg: true
+  examples_as_sys_msg: false
+
+- name: "Gemma2"
+  edit_format: "whole"
+  weak_model_name: "gemma2:9b-instruct-q5_K_M"
+  use_repo_map: true
+  send_undo_reply: true
+  accepts_images: true
+  lazy: true
+  reminder_as_sys_msg: true
+  examples_as_sys_msg: false
