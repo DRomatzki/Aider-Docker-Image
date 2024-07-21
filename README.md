@@ -63,7 +63,7 @@ Create a folder to be used as a volume. In this volume the config files will be 
 
 **Remember:** this is an interactive container that is created and destroyed every time. To make the changes in your config file applicable to your current Aider instance, you have to stop and restart the container again.
 
-    ```bash
+       ```bash
 docker run --rm -it \
            --name aider \
            -p 8501:8501 \
@@ -78,18 +78,18 @@ Replace `/path/to/config` with the actual path to your configuration directory o
 You can create an alias in bashrc if you like. It solves a lot of typing and problems.
 Edit your .bashrc file in you home directory and add the following code
 
-    ```bash
-alias aider="docker run --rm -it \
+       ```bash
+allias aider=docker run --rm -it \
            --name aider \
            -p 8501:8501 \
-          -v "$(pwd)":/home/appuser/app \
+           -v "$(pwd)":/home/appuser/app \
            -v /path/to/config:/home/appuser/config \
            --add-host=host.docker.internal:host-gateway \
-           aider:latest"
+           aider:latest`
 ```
 If necessary type 
 
-    ```bash
+        ```bash
 source ~/.bashrc
 ```
 
